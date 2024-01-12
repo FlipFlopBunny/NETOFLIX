@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Roboto:wght@300&display=swap');
+/* Variaveis */
+:root {
+	/*fontes*/
+  --fonte-principal: 'Roboto', sans-serif;
+  --fonte-titulo: 'Bebas Neue', sans-serif;
+  --fonte-filmes: 'Fjalla One', sans-serif;
+  
+  /*cores*/
+  --branco: #F9FFFC; /*texto*/
+  --vermelho: #e00000; /*accent*/
+  --warm-black: #1D0006; /**/
+  --cinza: #2A2523; /**/
+  --cool-black: #15191D;
+}
+
+
+/*BODY*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+	color: var(--branco);
+}
+body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+	  background-color: var(--cool-black);
+    }
+/*BODY*/
+
+
+/*HEADER*/
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--warm-black);
+	flex-direction: row;
+}
+
+.title{
+	font-family: var(--fonte-titulo);
+	margin: 0;
+	text-decoration: none;
+}
+.title:hover{
+	color: var(--vermelho);
+    cursor: pointer;
+}
+
+.pop_icon {
+	padding: 8px;
+	height: 48px;
+	width: 48px;
+}
+#h1_favoritos {
+	font-family: var(--fonte-titulo);
+	color: var(--vermelho);
+	padding-left: 12em;
+}
+/*HEADER*/
+
+/*LISTA*/
+.lista{
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.lista ul {
+	flex-direction: row;
+}
+.item{
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+	flex-direction: column;
+	list-style-type: none;
+}
+.item:hover{
+    background-color: var(--vermelho);
+    cursor: pointer;
+}
+.item img{
+    width: 100%;
+}
+h2{
+	font-family: var(--fonte-filmes);
+}
+/*LISTA*/

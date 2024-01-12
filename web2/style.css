@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Roboto:wght@300&display=swap');
+/* Variaveis */
+:root {
+	/*fontes*/
+  --fonte-principal: 'Roboto', sans-serif;
+  --fonte-titulo: 'Bebas Neue', sans-serif;
+  --fonte-filmes: 'Fjalla One', sans-serif;
+  
+  /*cores*/
+  --branco: #F9FFFC; /*texto*/
+  --vermelho: #e00000; /*accent*/
+  --warm-black: #1D0006; /**/
+  --cinza: #2A2523; /**/
+  --cool-black: #15191D;
+}
+
+
+/*BODY*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+	color: var(--branco);
+}
+body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+	  background-color: var(--cool-black);
+    }
+main {
+	flex: 1;
+    padding: 20px;
+}
+/*BODY*/
+
+
+/*HEADER*/
+header {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+	
+	background-color: var(--warm-black);
+}
+
+.title{
+	font-family: var(--fonte-titulo);
+	margin: 0;
+	text-decoration: none;
+}
+.title:hover{
+	color: var(--vermelho);
+    cursor: pointer;
+}
+.forma{
+    border: 1px solid var(--vermelho);
+	background-color: var(--vermelho);
+    border-radius: 20px;
+	
+    display: flex;
+	flex-grow: 1; 
+    margin-left: 20px;
+}
+.forma input{
+	padding: 8px;
+      border: none;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+	  flex: auto;
+	  flex-grow: 1; 
+	  color: black;
+}
+.forma button{
+	padding: 8px 12px;
+      background-color: var(--vermelho);  
+      border: none;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      cursor: pointer;
+}
+.pop_icon {
+	padding: 8px;
+	height: 48px;
+	width: 48px;
+}
+.icon {
+	padding: 8px;
+	height: 32px;
+	width: 32px;
+}
+
+.header_links {
+	padding: 12px;
+	
+}
+/*HEADER*/
+
+/*INDEX*/
+.lista{
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.item{
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+	font-family: var(--fonte-filmes);
+}
+div.item:hover{
+    background-color: var(--vermelho);
+    cursor: pointer;
+}
+div.item img{
+    width: 100%;
+}
+h2{
+	font-family: var(--fonte-filmes);
+}
+/*INDEX*/
+
+
+/*FOOTER*/
+footer {
+	text-align: center;
+	background-color: var(--warm-black);
+}
+/*FOOTER*/
